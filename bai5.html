@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        let n=+prompt('nhập số thứ nhất: ');
+        let banbe= 0;
+        for ( let i =1; i<=n/2; i++){
+            if(n%i==0){
+                banbe = banbe + i;
+            }
+        }
+        let m=+prompt('nhập số thứ hai: ');
+        let banbee= 0;
+        for (let i=1; i<=m/2; i++){
+            if(m%i==0){
+                banbee= banbee +i;
+            }
+        }
+        if ((banbe== m) && (banbee== n)){
+            document.write('hai số đó là bạn bè.');
+        }else{
+            document.write('Hai số đó không phải là bạn bè.');
+        }
+    </script>
+</body>
+</html> 
+

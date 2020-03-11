@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let songuyen=""
+        n=max=prompt("nhập vào số bất kì khác 0");
+        while (n>0){
+            songuyen=songuyen+";" +n;
+            n=prompt("nhập vào số bất kì khác 0");
+            if (n>max){max=n};
+        }
+        document.write("Những số đã nhập  :   " + songuyen );
+        document.write("<br>");
+        document.write("max là :" +max);
+    </script>
+</body>
+</html>
